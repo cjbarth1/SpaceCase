@@ -14,6 +14,7 @@
 		C90E51F1202FC50C008E8613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E51EF202FC50C008E8613 /* LaunchScreen.storyboard */; };
 		C90E51FC202FC50C008E8613 /* SpaceCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E51FB202FC50C008E8613 /* SpaceCaseTests.swift */; };
 		C90E520B202FD023008E8613 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90E520A202FD023008E8613 /* Alamofire.framework */; };
+		C91E96FE2030C60100DE0D10 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E96FD2030C60100DE0D10 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C90E51FB202FC50C008E8613 /* SpaceCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCaseTests.swift; sourceTree = "<group>"; };
 		C90E51FD202FC50C008E8613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C90E520A202FD023008E8613 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		C91E96FD2030C60100DE0D10 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +115,10 @@
 		C91E96F12030BDB600DE0D10 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C91E96FC2030C5F200DE0D10 /* NetworkingProtocols */,
 				C91E96F42030BDD500DE0D10 /* Requests */,
 				C91E96F32030BDCF00DE0D10 /* Services */,
+				C91E96FA2030C5B300DE0D10 /* Remote.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -162,6 +166,14 @@
 				C90E51EF202FC50C008E8613 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C91E96FC2030C5F200DE0D10 /* NetworkingProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				C91E96FD2030C60100DE0D10 /* Endpoint.swift */,
+			);
+			path = NetworkingProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90E51E9202FC50C008E8613 /* ViewController.swift in Sources */,
+				C91E96FE2030C60100DE0D10 /* Endpoint.swift in Sources */,
 				C90E51E7202FC50C008E8613 /* AppDelegate.swift in Sources */,
+				C91E96FB2030C5B300DE0D10 /* Remote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
