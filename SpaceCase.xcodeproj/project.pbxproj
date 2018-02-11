@@ -13,7 +13,7 @@
 		C90E51EE202FC50C008E8613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90E51ED202FC50C008E8613 /* Assets.xcassets */; };
 		C90E51F1202FC50C008E8613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E51EF202FC50C008E8613 /* LaunchScreen.storyboard */; };
 		C90E51FC202FC50C008E8613 /* SpaceCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E51FB202FC50C008E8613 /* SpaceCaseTests.swift */; };
-		C90E5209202FC623008E8613 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90E5208202FC623008E8613 /* Alamofire.framework */; };
+		C90E520B202FD023008E8613 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90E520A202FD023008E8613 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		C90E51F7202FC50C008E8613 /* SpaceCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90E51FB202FC50C008E8613 /* SpaceCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCaseTests.swift; sourceTree = "<group>"; };
 		C90E51FD202FC50C008E8613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C90E5208202FC623008E8613 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		C90E520A202FD023008E8613 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90E5209202FC623008E8613 /* Alamofire.framework in Frameworks */,
+				C90E520B202FD023008E8613 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 		C90E5207202FC5F9008E8613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C90E5208202FC623008E8613 /* Alamofire.framework */,
+				C90E520A202FD023008E8613 /* Alamofire.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
