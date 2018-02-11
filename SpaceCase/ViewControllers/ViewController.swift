@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    RocketRequest.getRocket(rocketID: 1) { rocket in
+      print(rocket)
+    }
   }
+
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()

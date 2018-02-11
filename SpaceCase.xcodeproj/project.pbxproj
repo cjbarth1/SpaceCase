@@ -14,6 +14,12 @@
 		C90E51F1202FC50C008E8613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E51EF202FC50C008E8613 /* LaunchScreen.storyboard */; };
 		C90E51FC202FC50C008E8613 /* SpaceCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E51FB202FC50C008E8613 /* SpaceCaseTests.swift */; };
 		C90E520B202FD023008E8613 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90E520A202FD023008E8613 /* Alamofire.framework */; };
+		C91E96F92030C4FC00DE0D10 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E96F82030C4FC00DE0D10 /* Rocket.swift */; };
+		C91E96FB2030C5B300DE0D10 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E96FA2030C5B300DE0D10 /* Remote.swift */; };
+		C91E96FE2030C60100DE0D10 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E96FD2030C60100DE0D10 /* Endpoint.swift */; };
+		C91E97032030CBAE00DE0D10 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E97022030CBAE00DE0D10 /* RocketService.swift */; };
+		C91E97052030DE4B00DE0D10 /* RocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E97042030DE4B00DE0D10 /* RocketResponse.swift */; };
+		C91E97072030DF1D00DE0D10 /* RocketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E97062030DF1D00DE0D10 /* RocketRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		C90E51FB202FC50C008E8613 /* SpaceCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCaseTests.swift; sourceTree = "<group>"; };
 		C90E51FD202FC50C008E8613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C90E520A202FD023008E8613 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		C91E96F82030C4FC00DE0D10 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		C91E96FA2030C5B300DE0D10 /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
+		C91E96FD2030C60100DE0D10 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C91E97022030CBAE00DE0D10 /* RocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketService.swift; sourceTree = "<group>"; };
+		C91E97042030DE4B00DE0D10 /* RocketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketResponse.swift; sourceTree = "<group>"; };
+		C91E97062030DF1D00DE0D10 /* RocketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +125,10 @@
 		C91E96F12030BDB600DE0D10 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C91E96FC2030C5F200DE0D10 /* NetworkingProtocols */,
 				C91E96F42030BDD500DE0D10 /* Requests */,
 				C91E96F32030BDCF00DE0D10 /* Services */,
+				C91E96FA2030C5B300DE0D10 /* Remote.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -122,6 +136,8 @@
 		C91E96F22030BDC500DE0D10 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C91E96F82030C4FC00DE0D10 /* Rocket.swift */,
+				C91E97042030DE4B00DE0D10 /* RocketResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +145,7 @@
 		C91E96F32030BDCF00DE0D10 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C91E97022030CBAE00DE0D10 /* RocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,6 +153,7 @@
 		C91E96F42030BDD500DE0D10 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				C91E97062030DF1D00DE0D10 /* RocketRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -162,6 +180,14 @@
 				C90E51EF202FC50C008E8613 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C91E96FC2030C5F200DE0D10 /* NetworkingProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				C91E96FD2030C60100DE0D10 /* Endpoint.swift */,
+			);
+			path = NetworkingProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91E96F92030C4FC00DE0D10 /* Rocket.swift in Sources */,
 				C90E51E9202FC50C008E8613 /* ViewController.swift in Sources */,
+				C91E96FE2030C60100DE0D10 /* Endpoint.swift in Sources */,
 				C90E51E7202FC50C008E8613 /* AppDelegate.swift in Sources */,
+				C91E96FB2030C5B300DE0D10 /* Remote.swift in Sources */,
+				C91E97052030DE4B00DE0D10 /* RocketResponse.swift in Sources */,
+				C91E97032030CBAE00DE0D10 /* RocketService.swift in Sources */,
+				C91E97072030DF1D00DE0D10 /* RocketRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
